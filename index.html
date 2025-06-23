@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Student Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    .navbar-custom {
+      background-color: rgba(11, 190, 68, 0.7); /* Transparent blue */
+      backdrop-filter: blur(10px); /* Blur for glass effect */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+      width:60px;
+      margin-right: 10px;
+
+    }
+
+    .nav-link {
+      color: #fff !important;
+    }
+
+    .nav-link:hover {
+      color: #ffd700 !important;
+    }
+
+    .typewriter {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #c40d16;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+      margin: 90px 0 20px 0;
+      text-align: center;
+      border:2px solid green;
+      box-shadow: 0px 0px 10px 10px red;
+      background-color: #333;
+      text-align: center;
+    }
+
+    @keyframes typing {
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: #0d6efd;
+      }
+    }
+
+    .carousel-inner img {
+      height: 500px;
+      width:300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      background-color: #f8f9fa;
+      margin-top: 30px;
+    }
+
+    .about-section h2 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    .examples {
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .examples h3 {
+      color: #dd1dd7;
+      margin-bottom: 15px;
+    }
+
+    .examples ul {
+      list-style-type: square;
+      padding-left: 20px;
+      color: #444;
+    }
+
+    .examples ul li {
+      margin-bottom: 8px;
+    }
+    h2{
+      border:2px solid black;
+      box-shadow: 0px 0px 20px 10px green;
+      background-color:black ;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.AzdRE-LcrSDJiOIzdKmQHQHaFS&pid=Api&P=0&h=180" alt=""> MY WORLD 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cources.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Projects</a></li>
+              <li><a class="dropdown-item" href="#">Careers</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="typewriter">WELCOME TO MY WORLD !</div>
+
+  <!-- Automatic Image Slide Show -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.-edFDcSqlon5xMykpg5qMgHaEK&pid=Api&P=0&h=180" class="d-block w-100" alt="image1 ">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.NWnITLblx9ipLhmWID3ovQHaE8&pid=Api&P=0&h=180" class="d-block w-100" alt="image2">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.Mvcr0QDsGXOx29cSBfXd6AHaE7&pid=Api&P=0&h=180" class="d-block w-100" alt="image3">
+    </div>
+  </div>
+</div>
+
+
+  <section class="about-section">
+    <h2>ABOUT MY WORLD</h2><br>
+    <p>Engineers are the architects of innovation, driving progress in every field imaginable. From infrastructure to
+      artificial intelligence, they apply scientific knowledge to develop solutions that improve life for all of us.</p>
+
+    <p>Engineering is divided into numerous branches, each specializing in a particular field of technology or
+      industry. The most common fields include Mechanical, Electrical, Civil, Computer, Electronics, and Aerospace
+      Engineering.</p>
+
+    <div class="examples">
+      <h3>EXAMPLES OF WHAT I DO:</h3><br>
+      <ul>
+        <li>Design bridges, highways, tunnels, and smart city infrastructures (Civil Engineering)</li>
+        <li>Develop electric vehicles, drones, and machines (Mechanical Engineering)</li>
+        <li>Create software, mobile apps, and artificial intelligence models (Computer Engineering)</li>
+        <li>Work on space exploration missions (Aerospace Engineering)</li>
+        <li>Innovate renewable energy systems and smart grids (Electrical Engineering)</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 40px;">WHY MY WORLD IS IMPORTANT?</h2><br>
+    <p>Engineering helps transform ideas into reality. The smartphone you use, the cars you travel in, the bridges you
+      cross, the medicines you take – all of these involve engineering at some level. Engineers use creativity, logic,
+      and analytical skills to tackle challenges, whether it’s designing eco-friendly vehicles or developing software to
+      solve global issues.</p>
+
+    <h2 style="margin-top: 40px;">FUTERS OF MY WORLD</h2><br>
+    <p>With emerging technologies like Artificial Intelligence (AI), Blockchain, Quantum Computing, and 3D Printing,
+      engineers are at the forefront of shaping the future. Sustainable engineering practices are becoming the norm to
+      reduce environmental impact, and smart technologies are driving the next wave of innovation.</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
